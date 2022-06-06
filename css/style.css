@@ -3,6 +3,8 @@
   padding: 0;
   border: 0;
   box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
 }
 
 body {
@@ -15,13 +17,13 @@ main {
   justify-content: center;
   align-items: center;
   flex: 1;
-  gap: 32px;
 }
 
 main section {
   min-width: 350px;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 main section article {
@@ -30,9 +32,90 @@ main section article {
 }
 
 main section article.card {
+  padding: 40px;
   border: 1px solid rgba(219, 219, 219, 1);
   border-radius: 1px;
   background-color: rgba(255, 255, 255, 1);
+}
+
+main section article#login-card {
+  gap: 36px;
+
+  align-items: center;
+}
+main section article#login-card img.text-logo {
+  width: 175px;
+  height: 51px;
+}
+main section article#login-card form {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  gap: 14px;
+  flex-direction: column;
+}
+
+main section article#login-card form .inputs {
+  display: flex;
+  gap: 6px;
+  flex-direction: column;
+}
+main section article#login-card form .inputs input {
+  padding: 9px 0 7px 8px;
+  height: 36px;
+  color: #8e8e8e;
+  font-weight: 300;
+  opacity: 1;
+  border: 1px solid rgba(var(--ca6, 219, 219, 219), 1);
+  background: rgba(var(--b3f, 250, 250, 250), 1);
+}
+main section article#login-card form button {
+  background-color: rgba(var(--d69, 0, 149, 246), 0.3);
+  opacity: 1;
+  border-radius: 4px;
+  color: rgba(var(--eca, 255, 255, 255), 1);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 5px 9px;
+}
+main section article#login-card form .form-or {
+  display: flex;
+  align-items: center;
+}
+main section article#login-card form .form-or hr {
+  background-color: rgba(var(--b38, 219, 219, 219), 1);
+  height: 1px;
+  flex-grow: 1;
+}
+main section article#login-card form .form-or p {
+  margin: 0 18px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 15px;
+  color: rgba(var(--f52, 142, 142, 142), 1);
+}
+main section article#login-card form .facebook-login {
+  margin-top: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section article#login-card form .facebook-login img {
+  height: 25px;
+  width: 25px;
+}
+main section article#login-card form .facebook-login p {
+  color: #385185;
+  font-size: 14px;
+  font-weight: 800;
+}
+main section article#login-card form .forgot-pass {
+  color: rgba(var(--fe0, 0, 55, 107), 1);
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: 12px;
+  text-align: center;
 }
 
 main section article.mobile-app-card {
